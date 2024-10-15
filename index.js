@@ -5,7 +5,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import mongoose from 'mongoose'
-import authRoutes from './Routes/authRoutes.js'
+import router from './src/Route/route.js'
 import { DATABASE_URL, PORT} from './utils/config.js'
 import bodyParser from'body-parser'
 
@@ -29,7 +29,10 @@ app.use(cors({}))
 app.use(cookieParser())
 app.use(express.json())
 
-app.use(authRoutes)
+
+app.use(router)
+
+
 const Server=app.listen(Port,()=>{
     console.log(`Server is Running ${Port}`)
 })
