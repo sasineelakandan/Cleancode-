@@ -16,7 +16,7 @@ class AuthController {
         maxAge: 60 * 60 * 24 * 1000, 
       }).send({
         message: 'User registered successfully!',
-        token: result.token,
+   
       });
       
     } catch (err) {

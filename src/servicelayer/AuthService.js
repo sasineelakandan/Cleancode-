@@ -2,7 +2,7 @@
 import HashUtil from '../utilitylayer/HashUtil.js';
 import UserRepository from '../repostrylayer/UserRepository.js';
 import jwt from 'jsonwebtoken';
-import { JWT_KEY } from '../../utils/config.js';
+
 
 class AuthService {
   constructor() {
